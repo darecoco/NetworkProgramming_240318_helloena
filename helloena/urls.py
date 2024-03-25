@@ -20,6 +20,8 @@ from django.urls import path
 import playground.views
 
 urlpatterns = [
+    # 이러이러한 url로 들어오면 이러이러한 함수를 실행해!
+    # 주의, 함수 적을 때 괄호 적으면 안 됨.
     path('playground/hello/', playground.views.say_hello, name='playground_hello'),
     path('playground/hello_html/', playground.views.say_hello_html, name='playground_hello_html'),
     path('admin/', admin.site.urls),
