@@ -29,3 +29,24 @@
       1. _playground/_ -> _hello/_ -> _say_hello()_
       2. _playground/_ -> _hello_html/_ -> _say_hello_html()_
       3. _playground/_ -> _bye_html/_ -> _say_bye_html()_
+***
+5. stratapp ENA
+   1. Termianl
+      1. python manage.py startapp ENA
+   2. helloena/settings.py
+      1. 'ENA', in INSTALLED_APPS
+6. ENA
+   1. views
+      1. show_ena()
+      2. show_moony()
+   2. templates/ENA/
+      1. ena.html
+         1. title : Joel G - ENA
+         2. h1 : ENA
+         3. h2 : ena
+         4. img : ena 사진
+            1. border-radius : 50%
+      2. moony.html
+   3. urls
+      1. ENA/ -> ena/ -> show_ena()
+      2. ENA/ -> moony/ -> show_moony()
