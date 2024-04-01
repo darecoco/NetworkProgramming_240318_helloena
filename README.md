@@ -39,14 +39,17 @@
    1. views
       1. show_ena()
       2. show_moony()
+      3. -> templates에 context 전달
    2. templates/ENA/
-      1. ena.html
+      1. ~~ena.html~~
          1. title : Joel G - ENA
          2. h1 : ENA
          3. h2 : ena
          4. img : ena 사진
             1. border-radius : 50%
-      2. moony.html
+      2. ~~moony.html~~
+      3. 등장인물.html
+         1. group_name, name, img_src
    3. urls
       1. ENA/ -> ena/ -> show_ena()
       2. ENA/ -> moony/ -> show_moony()
