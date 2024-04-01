@@ -37,10 +37,11 @@
       1. 'ENA', in INSTALLED_APPS
 6. ENA
    1. views
-      1. show_ena()
-      2. show_moony()
+      1. ~~show_ena()~~
+      2. ~~show_moony()~~
       3. -> templates에 context 전달
       4. 정보를 하나로 묶고, 거기에서 꺼내오자
+      5. show_character()
    2. templates/ENA/
       1. ~~ena.html~~
          1. title : Joel G - ENA
@@ -52,5 +53,6 @@
       3. 등장인물.html
          1. group_name, name, img_src
    3. urls
-      1. ENA/ -> ena/ -> show_ena()
-      2. ENA/ -> moony/ -> show_moony()
+      1. ~~ENA/ -> ena/ -> show_ena()~~
+      2. ~~ENA/ -> moony/ -> show_moony()~~
+      3. ENA/ -> <character>/ -> show_character(character)
