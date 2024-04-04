@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ENA - 등장인물들</title>
+</head>
+<body>
+<h1>{{ Characters.0.title }} - 등장인물</h1>
+<table border="1">
+    <tr>
+        <th>이름</th>
+        <th>프로필</th>
+    </tr>
+
+    {# Characters에서 하나씩 꺼내어 character에 넣음 #}
+    {% for character in Characters %}
+    <tr>
+        {% load static %}
+        <td><a href="http://localhost:8000/ENA/{{ character.name }}"> {{ character.name }} </a></td>
+        <td><img src="{% static character.img_src %}" style="height: 200px;"/></td>
+    </tr>
+    {% endfor %}
+
+</table>
+</body>
+</html>

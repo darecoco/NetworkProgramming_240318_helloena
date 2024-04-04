@@ -43,6 +43,7 @@
       4. 정보를 하나로 묶고, 거기에서 꺼내오자
       5. show_character()
       6. image link -> image file(static)
+      7. show_character_list
    2. templates/ENA/
       1. ~~ena.html~~
          1. title : Joel G - ENA
@@ -54,9 +55,11 @@
       3. 등장인물.html
          1. group_name, name, img_src
          2. `{% load static %} <img src="{% img src %}">`
+         3. character_list.html
    3. urls
       1. ~~ENA/ -> ena/ -> show_ena()~~
       2. ~~ENA/ -> moony/ -> show_moony()~~
       3. `ENA/ -> <character>/ -> show_character(character)`
+      4. ENA/ -> character_list/ -> show_charactor_list()
    4. static/ENA/images/
       1. May I help you sir.gif, merci.png, moony.webp

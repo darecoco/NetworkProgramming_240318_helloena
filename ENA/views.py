@@ -41,3 +41,7 @@ def show_moony(request):
 def show_character(request, 등장인물):
     context = list(filter(lambda character: 등장인물 in character['name'], group['Characters']))[0]
     return render(request, "ENA/등장인물.html", context=context)
+
+def show_character_list(request):
+    context = group         #{'char': [{등장인물1}, {등장인물2},]
+    return render(request, 'ENA/character_list.html', context=context)
