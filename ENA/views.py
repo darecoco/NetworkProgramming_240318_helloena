@@ -5,17 +5,20 @@ group = {
         {
             'title': 'ENA',
             'name': 'ena',
-            'img_src': 'https://i.ytimg.com/vi/L2R9pmu0llk/maxresdefault.jpg',
+            'img_src':'ENA/images/May I help you sir.gif',
+            # 'img_src': 'https://i.ytimg.com/vi/L2R9pmu0llk/maxresdefault.jpg',
         },
         {
             'title': 'ENA',
             'name': 'moony',
-            'img_src': 'https://www.fangamer.com/cdn/shop/files/product_ena_moony_plush_main.png?crop=center&height=1200&v=1692229021&width=1800',
+            'img_src':'ENA/images/moony.webp',
+            # 'img_src': 'https://www.fangamer.com/cdn/shop/files/product_ena_moony_plush_main.png?crop=center&height=1200&v=1692229021&width=1800',
         },
         {
             'title': 'ENA',
             'name': 'merci',
-            'img_src': 'https://i.namu.wiki/i/TFEojh7xN347UTnIdHqCcVrjBkguvlvO0FeIU7lu3F1xchewM8DrZT584UDCKjp5maWs67ZYe0Awf9CQFe8_JA.webp',
+            'img_src':'ENA/images/merci.png',
+            # 'img_src': 'https://i.namu.wiki/i/TFEojh7xN347UTnIdHqCcVrjBkguvlvO0FeIU7lu3F1xchewM8DrZT584UDCKjp5maWs67ZYe0Awf9CQFe8_JA.webp',
         }
     ]
 }
