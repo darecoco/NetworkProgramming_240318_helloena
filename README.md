@@ -55,7 +55,9 @@
       3. 등장인물.html
          1. group_name, name, img_src
          2. `{% load static %} <img src="{% img src %}">`
-         3. character_list.html
+      4. character_list.html
+         1. {% url '앱이릅:path이름' %}
+         2. {% url '앱이름:path이름' 변수=값 %}
    3. urls
       1. ~~ENA/ -> ena/ -> show_ena()~~
       2. ~~ENA/ -> moony/ -> show_moony()~~

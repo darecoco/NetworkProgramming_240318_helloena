@@ -19,7 +19,8 @@
     {% for character in Characters %}
     <tr>
         {% load static %}
-        <td><a href="//localhost:8000/ENA/{{ character.name }}"> {{ character.name }} </a></td>
+        <td><a href="{% url 'ENA:등장인물' 등장인물=character.name %}">{{ character.name }}</a></td>
+{#        <td><a href="//localhost:8000/ENA/{{ character.name }}"> {{ character.name }} </a></td>#}
         {# [그 외 많은 다른 링크 달기 #}
         {# ../{{ character.name }} - 상위 폴더로 간 후 등장인물 이름 대입 #}
         {# /ENA/{{ character.name }} - 내 프로젝트 최상위 폴더부터 시작 #}
