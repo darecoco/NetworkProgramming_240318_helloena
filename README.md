@@ -55,6 +55,11 @@
       3. 등장인물.html
          1. group_name, name, img_src
          2. `{% load static %} <img src="{% img src %}">`
+         3. ```
+            {% extends 'base.html' %} 
+            {% block title %} {% endblock %} 
+            {% block content %} {% endblock %}
+            ```
       4. character_list.html
          1. {% url '앱이릅:path이름' %}
          2. {% url '앱이름:path이름' 변수=값 %}
@@ -65,3 +70,13 @@
       4. ENA/ -> character_list/ -> show_charactor_list()
    4. static/ENA/images/
       1. May I help you sir.gif, merci.png, moony.webp
+7. tamplates/
+   1. base.html
+   ```
+   {% block title %} {% endblock %}
+   {% block css %} {% endblock %}
+   {% block content %} {% endblock %}
+   ```
+8. helloena/
+   1. in TEMPLATES in settings.py
+      1. 'DIRS': [BASE_DIR / 'templates'],

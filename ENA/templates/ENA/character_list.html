@@ -1,33 +1,21 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ENA - 등장인물들</title>
-</head>
-<body>
-<h1>{{ Characters.0.title }} - 등장인물</h1>
-<table border="1">
-    <tr>
-        <th>이름</th>
-        <th>프로필</th>
-    </tr>
+{% extends 'base.html' %}
 
-    {# Characters에서 하나씩 꺼내어 character에 넣음 #}
-    {% for character in Characters %}
-    <tr>
-        {% load static %}
-        <td><a href="{% url 'ENA:등장인물' 등장인물=character.name %}">{{ character.name }}</a></td>
-{#        <td><a href="//localhost:8000/ENA/{{ character.name }}"> {{ character.name }} </a></td>#}
-        {# [그 외 많은 다른 링크 달기 #}
-        {# ../{{ character.name }} - 상위 폴더로 간 후 등장인물 이름 대입 #}
-        {# /ENA/{{ character.name }} - 내 프로젝트 최상위 폴더부터 시작 #}
-        <td><img src="{% static character.img_src %}" style="height: 200px;"/></td>
-    </tr>
-    {% endfor %}
+{% block title %} ENA - 등장인물들 {% endblock %}
 
-</table>
-</body>
-</html>
+{% block content %}
+    <h1>{{ Characters.0.title }} - 등장인물</h1>
+    <table class="table table-bordered align-middle">
+        <tr>
+            <th>이름</th>
+            <th>프로필</th>
+        </tr>
+
+        {% for character in Characters %}
+        <tr>
+            {% load static %}
+            <td><a href="{% url 'ENA:등장인물' 등장인물=character.name %}">{{ character.name }}</a></td>
+            <td><img src="{% static character.img_src %}" style="height: 200px;"/></td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title }} - {{ name }}</title>
-</head>
-<body>
-    <h1>{{ title }}</h1>
-<h2>{{ name }}</h2>
+{% extends 'base.html' %}
+
+{% block title %} {{ title }} - {{ name }} {% endblock %}
+
+{% block content %}
+    <h1 class="display-4">{{ title }}</h1>
+    <a href=" {% url 'ENA:등장인물리스트' %} ">
+        💬ENA 등장인물
+    </a>
+    <h2>{{ name }}</h2>
     {% load static %}
-<img src="{% static img_src %}" alt="{{ title }} - {{ name }}" style="border-radius: 50%;"/>
-</body>
-</html>
+    <img src="{% static img_src %}" alt="{{ title }} - {{ name }}" style="border-radius: 50%;"/>
+{% endblock %}
